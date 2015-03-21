@@ -1,6 +1,6 @@
 {
   "name": "modulename",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "check if a name is available in npm registry",
   "bin": "index.js",
   "scripts": {

@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var fs = require('fs');
 var request = require('request');
 var argv = require('minimist')(process.argv.slice(2));
