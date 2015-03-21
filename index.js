@@ -5,13 +5,12 @@ var argv = require('minimist')(process.argv.slice(2));
 var packagename = argv._[0];
 
 request('https://registry.npmjs.org/' + packagename, function(err, res) {
-  console.log(res.statusCode);
   if(err) {
     console.error(err);
     process.exit(1);
   }
 
-  if(res.statuscode === 404) {
+  if(res.statusCode === 404) {
     console.log(packagename + ' is available now');
   }
 
